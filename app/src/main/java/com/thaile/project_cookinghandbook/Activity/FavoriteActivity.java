@@ -35,15 +35,15 @@ import java.util.ArrayList;
 public class FavoriteActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, DBManager.UpdateList, View.OnClickListener{
     public String tableName;
     private ItemFood itemFood;
-    public SearchAdapter searchAdapter;
+    private SearchAdapter searchAdapter;
     private DBManager db;
     private ImageView img_delete_text;
     private AutoCompleteTextView search_view;
-    public GridView gridView;
+    private GridView gridView;
     private TextView empty;
     private ImageView img_back;
     private ArrayList<ItemFood> arrayList;
-    public ListViewAdapter adapter;
+    private ListViewAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
