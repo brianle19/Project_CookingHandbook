@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "908013929855",
+    "firebase_url": "https://cookinghandbookproject.firebaseio.com",
+    "project_id": "cookinghandbookproject",
+    "storage_bucket": "cookinghandbookproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908013929855:android:c6ffeee967973a84",
+        "android_client_info": {
+          "package_name": "com.thaile.project_cookinghandbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908013929855-n45vq9r1o9teai10tdffh8khdqfudo3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thaile.project_cookinghandbook",
+            "certificate_hash": "09BE7E4979C830676F041DA20ADCDB83B2D622B1"
+          }
+        },
+        {
+          "client_id": "908013929855-n5tvlbbb3rt9a382hth2pv8gf7j021go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX9GbU5b8x8_brs67qV0wDHmcCjRlKajc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908013929855-n5tvlbbb3rt9a382hth2pv8gf7j021go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

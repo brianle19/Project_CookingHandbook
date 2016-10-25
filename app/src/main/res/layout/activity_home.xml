@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:id="@+id/activity_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fr_main"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:padding="4dp"
+                    layout="@layout/item_top_bar"/>
+
+                <android.support.design.widget.TabLayout
+                    app:elevation="0dp"
+                    android:id="@+id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"
+                    android:background="#7CB342"
+                    app:tabTextColor="#757575"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabGravity="fill">
+                </android.support.design.widget.TabLayout>
+
+                <android.support.v4.view.ViewPager
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+            <include layout="@layout/navigation_bar"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity = "left">
+            </include>
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

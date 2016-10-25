@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frg_main_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_top_bar_content"
+        android:id="@+id/top_bar_content" />
+
+    <LinearLayout
+        android:padding="3dp"
+        android:layout_below="@id/top_bar_content"
+        android:id="@+id/top_img"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <ImageView
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:id="@+id/img_food1"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:id="@+id/img_food2"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:id="@+id/img_food3"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+<android.support.v4.widget.NestedScrollView
+    android:fastScrollEnabled="true"
+    android:padding="2dp"
+    android:layout_below="@id/top_img"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    style="@style/StyleTitle"
+                    android:text="GIỚI THIỆU"
+                    android:id="@+id/txtv_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/StyleContent"
+            android:text="Đây là món..."
+            android:id="@+id/txtv_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                style="@style/StyleTitle"
+                android:text="NGUYÊN LIỆU"
+                android:id="@+id/txtv_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                style="@style/StyleContent"
+                android:id="@+id/txtv_material_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content...."
+                />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+    <LinearLayout
+        style="@style/Widget.CardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                style="@style/StyleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtv_traning"
+                android:text="CÁCH LÀM"/>
+
+            <TextView
+                style="@style/StyleContent"
+                android:id="@+id/txtv_process_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content....."
+                />
+</LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+    <LinearLayout
+        style="@style/Widget.CardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                style="@style/StyleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtv_result_photo"
+                android:text="THÀNH PHẨM CỦA BẠN"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerview_yourimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

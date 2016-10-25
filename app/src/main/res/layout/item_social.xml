@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/img_user"
+            />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="Thai Le"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtv_user"
+            android:layout_toRightOf="@id/img_user" />
+
+        <TextView
+            android:textSize="8dp"
+            android:layout_alignParentRight="true"
+            android:text="Time"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtv_post_time"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:id="@+id/txtv_status"
+        android:text="Test test test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/img_social"/>
+
+
+</LinearLayout>

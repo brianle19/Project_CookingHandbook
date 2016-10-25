@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_yeuthich"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/item_top_bar_yeuthich"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridView
+                android:scrollbars="none"
+                android:padding="2dp"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gridView" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/empty"
+                android:drawableTop="@mipmap/ic_empty_black"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Không có mục hiển thị"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

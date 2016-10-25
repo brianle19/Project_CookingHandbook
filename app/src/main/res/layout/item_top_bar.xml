@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@color/backgroundapp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/custom_top"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_menu"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_menu_black" />
+
+        <AutoCompleteTextView
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_menu"
+            android:background="@android:color/transparent"
+            android:hint="Tìm kiếm"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:textColorHint="#757575"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#757575"
+            android:drawableLeft="@mipmap/ic_search_black"
+            android:completionThreshold="1"
+            android:id="@+id/search_view"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:focusable="true"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/img_delete_text"
+            android:layout_gravity="end|center"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_cancel" />
+
+    </RelativeLayout>
+</RelativeLayout>

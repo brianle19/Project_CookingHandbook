@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:id="@+id/frame_main"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_user"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="Thai Le"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:id="@+id/txtv_user"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:background="@android:color/transparent"
+        android:textSize="14dp"
+        android:id="@+id/edt_status"
+        android:hint="Cập nhập trạng thái..."
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_below="@id/edt_status"
+            android:id="@+id/img_demo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_demo"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_cancel"
+            android:background="#7CB342"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Hủy bỏ"/>
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_ok"
+            android:layout_marginLeft="5dp"
+            android:background="#7CB342"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Tải lên"/>
+    </LinearLayout>
+</RelativeLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/custom_top"
+        style="?android:attr/progressBarStyleLarge"
+        android:max="100"/>
+</FrameLayout>
