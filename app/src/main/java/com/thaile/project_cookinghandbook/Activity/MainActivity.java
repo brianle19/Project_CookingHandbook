@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private DrawerLayout drawerLayout;
     private TabLayout tabLayout;
     private ArrayList<ItemTopicBar> arrayList = new ArrayList<>();
-    public ViewPager viewPager;
+    private ViewPager viewPager;
     private MyFragPagerAdapter myFragPagerAdapter;
     private RecyclerView recyclerViewBar;
     private AutoCompleteTextView search_view;
